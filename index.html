@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bangladesh Technology Hub — detailed information on Bangladesh's technology business operations, current and upcoming tech trends, startups, and the digital economy." />
+  <title>Bangladesh Technology Hub — Tech Business & Trends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Bangladesh Technology Hub home">
+        <span class="brand-mark" aria-hidden="true">বাংলা</span>
+        <span class="brand-text">BD <span>Tech</span> Hub</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="sectors.html" class="nav-link">Sectors</a></li>
+          <li><a href="trends.html" class="nav-link">Trends</a></li>
+          <li><a href="startups.html" class="nav-link">Startups</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Digital Bangladesh &amp; Beyond</p>
+          <h1>Understanding Bangladesh's Technology Business &amp; Future</h1>
+          <p class="lead">
+            A comprehensive look at how technology is reshaping Bangladesh's economy —
+            from fintech and garments-tech to AI, ICT exports, and the rising startup ecosystem.
+          </p>
+          <div class="hero-actions">
+            <a href="trends.html" class="btn btn-primary">Explore Trends</a>
+            <a href="sectors.html" class="btn btn-ghost">Browse Sectors</a>
+          </div>
+        </div>
+        <div class="hero-stats" id="heroStats" aria-label="Key figures">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- At a glance -->
+    <section class="section" id="glance">
+      <div class="container">
+        <div class="section-head">
+          <h2>Bangladesh Tech at a Glance</h2>
+          <p>Key indicators that show the scale and pace of the country's digital transformation.</p>
+        </div>
+        <div class="stat-grid" id="glanceGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectors preview -->
+    <section class="section section-alt" id="sectors">
+      <div class="container">
+        <div class="section-head">
+          <h2>Key Technology Sectors</h2>
+          <p>The industries driving innovation and economic growth across the country.</p>
+        </div>
+        <div class="card-grid" id="sectorGrid">
+          <!-- Populated by JS -->
+        </div>
+        <div class="center-cta">
+          <a href="sectors.html" class="btn btn-primary">View all sectors</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trends preview -->
+    <section class="section" id="trends">
+      <div class="container">
+        <div class="section-head">
+          <h2>Current &amp; Upcoming Tech Trends</h2>
+          <p>What's happening now in Bangladesh's tech scene — and what's coming next.</p>
+        </div>
+        <div class="trends-split">
+          <div class="trend-col">
+            <h3>Current Trends</h3>
+            <ul class="trend-list" id="currentTrends"></ul>
+          </div>
+          <div class="trend-col">
+            <h3>Upcoming Trends</h3>
+            <ul class="trend-list" id="upcomingTrends"></ul>
+          </div>
+        </div>
+        <div class="center-cta">
+          <a href="trends.html" class="btn btn-ghost">Full trend analysis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Startup ecosystem -->
+    <section class="section section-alt" id="startups">
+      <div class="container">
+        <div class="section-head">
+          <h2>The Startup Ecosystem</h2>
+          <p>Dhaka, Chittagong, and university incubators are producing a new generation of builders.</p>
+        </div>
+        <div class="startup-grid" id="startupGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <h2>Stay in the loop on Bangladesh's tech scene</h2>
+        <p>Get updates on trends, funding, and policy as the digital economy grows.</p>
+        <form class="cta-form" id="ctaForm">
+          <label class="visually-hidden" for="ctaEmail">Email address</label>
+          <input type="email" id="ctaEmail" name="ctaEmail" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn-dark">Subscribe</button>
+        </form>
+        <p class="form-note" id="ctaNote" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">বাংলা</span>
+        <span>BD Tech Hub</span>
+        <p>An informational resource on Bangladesh's technology business and trends.</p>
+      </div>
+      <nav class="footer-col" aria-label="Sections">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="startups.html">Startups</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Topics">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="trends.html">Fintech</a></li>
+          <li><a href="trends.html">AI &amp; Data</a></li>
+          <li><a href="trends.html">E-commerce</a></li>
+          <li><a href="trends.html">ICT Exports</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>Built as a reference guide for entrepreneurs, investors, and researchers interested in Bangladesh's tech landscape.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Bangladesh Technology Hub. For educational &amp; informational purposes.</p>
+      <p class="disclaimer">Figures are approximate and intended as general guidance, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

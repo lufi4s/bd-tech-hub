@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bangladesh Technology Hub — send a message, ask a question, or get in touch with the team." />
+  <title>Contact — Bangladesh Technology Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Bangladesh Technology Hub home">
+        <span class="brand-mark" aria-hidden="true">বাংলা</span>
+        <span class="brand-text">BD <span>Tech</span> Hub</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sectors.html" class="nav-link">Sectors</a></li>
+          <li><a href="trends.html" class="nav-link">Trends</a></li>
+          <li><a href="startups.html" class="nav-link">Startups</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question about Bangladesh's tech scene, want to contribute, or explore a partnership? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Rahim Ahmed" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option>General question</option>
+              <option>Data / research contribution</option>
+              <option>Partnership</option>
+              <option>Report an error</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="contactNote" role="status"></p>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Other ways to reach us</h3>
+          <ul>
+            <li><strong>Email</strong><span>hello@bdtechhub.example</span></li>
+            <li><strong>Location</strong><span>Dhaka, Bangladesh</span></li>
+            <li><strong>Hours</strong><span>Sun–Thu, 9:00 – 18:00 BST</span></li>
+          </ul>
+          <div class="topic-cards">
+            <h4>Popular topics</h4>
+            <a href="trends.html" class="topic-chip">Fintech &amp; bKash</a>
+            <a href="trends.html" class="topic-chip">AI &amp; Data</a>
+            <a href="trends.html" class="topic-chip">E-commerce</a>
+            <a href="trends.html" class="topic-chip">ICT Exports</a>
+            <a href="sectors.html" class="topic-chip">Garments-Tech</a>
+            <a href="startups.html" class="topic-chip">Funding</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">বাংলা</span>
+        <span>BD Tech Hub</span>
+        <p>An informational resource on Bangladesh's technology business and trends.</p>
+      </div>
+      <nav class="footer-col" aria-label="Sections">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="startups.html">Startups</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Topics">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="trends.html">Fintech</a></li>
+          <li><a href="trends.html">AI &amp; Data</a></li>
+          <li><a href="trends.html">E-commerce</a></li>
+          <li><a href="trends.html">ICT Exports</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>Built as a reference guide for entrepreneurs, investors, and researchers interested in Bangladesh's tech landscape.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Bangladesh Technology Hub. For educational &amp; informational purposes.</p>
+      <p class="disclaimer">Figures are approximate and intended as general guidance, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
